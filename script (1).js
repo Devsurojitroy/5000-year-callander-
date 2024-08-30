@@ -8,7 +8,7 @@ function generateCalendar(date) {
     const month = date.getMonth();
     const today = new Date();
 
-    document.getElementById('month-year').textContent = `${monthNames[month]} ${year}`;
+    document.getElementById('month-year-display').textContent = `${monthNames[month]} ${year}`;
 
     const firstDay = new Date(year, month, 1).getDay();
     const daysInMonth = new Date(year, month + 1, 0).getDate();
